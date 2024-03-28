@@ -1,41 +1,42 @@
 .other-users {
-  padding: 60px 0 200px;
-  border-top: 1px solid #ff002b;
-  background: url("../../images/paper.png") 28% 26%/500px 300px no-repeat,
-    url("../../images/salad.png") 70% 22%/167px 273px no-repeat,
-    url("../../images/tomatoes-with-leaf.png") 47% 120%/500px 345px no-repeat,
-    url("../../images/towel1.png") 96% 125%/700px 372px no-repeat;
-  @media (max-width: 1920px) {
-    padding: 3.13vw 0 10.42vw;
-    border-top: 0.05vw solid #ff002b;
-    background: url("../../images/paper.png") 28% 26%/26.04vw 15.63vw no-repeat,
-      url("../../images/salad.png") 70% 22%/8.7vw 14.22vw no-repeat,
-      url("../../images/tomatoes-with-leaf.png") 47% 120%/26.04vw 17.97vw
-        no-repeat,
-      url("../../images/towel1.png") 96% 125%/36.46vw 19.38vw no-repeat;
-  }
-  @media (max-width: 800px) {
-    padding: 6.13vw 0 28vw;
-    border-top: 0.05vw solid #ff002b;
-    background: 
-      url("../../images/tomatoes-with-leaf.png") 50% 115%/75.04vw 40.97vw
-        no-repeat;
-  }
+   margin-top: 60px;
+   padding: 60px 0 200px;
+   border-top: 1px solid #ff002b;
+   background: url("../../images/paper.png") 28% 26%/500px 300px no-repeat,
+      url("../../images/salad.png") 70% 22%/167px 273px no-repeat,
+      url("../../images/tomatoes-with-leaf.png") 47% 120%/500px 345px no-repeat,
+      url("../../images/towel1.png") 96% 125%/700px 372px no-repeat;
+   @media (max-width: 1920px) {
+      padding: 3.13vw 0 10.42vw;
+      border-top: 0.05vw solid #ff002b;
+      background: url("../../images/paper.png") 28% 26%/26.04vw 15.63vw
+            no-repeat,
+         url("../../images/salad.png") 70% 22%/8.7vw 14.22vw no-repeat,
+         url("../../images/tomatoes-with-leaf.png") 47% 120%/26.04vw 17.97vw
+            no-repeat,
+         url("../../images/towel1.png") 96% 125%/36.46vw 19.38vw no-repeat;
+   }
+   @media (max-width: 800px) {
+      padding: 6.13vw 0 28vw;
+      border-top: 0.05vw solid #ff002b;
+      background: url("../../images/tomatoes-with-leaf.png") 50% 115%/75.04vw
+         40.97vw no-repeat;
+   }
 }
 .other-users__wraper {
-  padding: 0 190px;
-  position: relative;
-  @media (max-width: 1920px) {
-    padding: 0 9.9vw;
-  }
+   padding: 0 190px;
+   position: relative;
+   @media (max-width: 1920px) {
+      padding: 0 9.9vw;
+   }
 }
 .other-users__title {
 }
 .other-users__swiper {
-  margin-top: 100px;
-  @media (max-width: 1920px) {
-    margin-top: 5.21vw;
-  }
+   margin-top: 100px;
+   @media (max-width: 1920px) {
+      margin-top: 5.21vw;
+   }
 }
 .other-users__item {
 }
@@ -45,4 +46,3 @@
 }
 .other-users__subtitle {
 }
-

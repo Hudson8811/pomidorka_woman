@@ -2,10 +2,8 @@
 @import "base/reset";
 @import "base/fonts";
 
-
 /*libs*/
 @import "libs/swiper-bundle.min";
-
 
 /* main */
 @import "partials/main";
@@ -15,8 +13,4 @@
 @import "components/choice";
 @import "components/result";
 @import "components/other-users";
-
-
-
-
-
+@import "components/preloader";
