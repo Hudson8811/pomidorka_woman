@@ -1,0 +1,448 @@
+.result {
+  padding: 65px 0 65px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 1920px) {
+    padding: 3.39vw 0;
+  }
+  @media (max-width: 800px) {
+    padding: 48.13vw 0 8.13vw;
+    background: url("../../images/leaf-big.png") 98% 10%/16.73vw 19.85vw
+      no-repeat;
+  }
+  &__dish {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -30%);
+    z-index: 1;
+    width: 535px;
+    height: 535px;
+    @media (max-width: 1920px) {
+      width: 27.86vw;
+      height: 27.86vw;
+    }
+    @media (max-width: 800px) {
+      right: 50%;
+      width: 66.88vw;
+      transform: translate(50%, -30%);
+      height: 66.88vw;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.result__title {
+  font-size: 96px;
+  line-height: 120%;
+  @media (max-width: 1920px) {
+    font-size: 5vw;
+  }
+  @media (max-width: 800px) {
+    font-size: 12vw;
+  }
+}
+
+.result__ingredients {
+}
+.ingredients-result {
+  background: url("../../images/salad.png") 6% -4% / 250px 300px no-repeat,
+    url("../../images/leaf-small.png") 79% 10% / 110px 170px no-repeat,
+    url("../../images/tomato-paste.png") 85% 52% / 205px 345px no-repeat,
+    url("../../images/paper.png") 98% 75% / 450px 300px no-repeat;
+  @media (max-width: 1920px) {
+    background: url("../../images/salad.png") 6% -4% / 13.02vw 15.63vw no-repeat,
+      url("../../images/leaf-small.png") 79% 10% / 5.73vw 8.85vw no-repeat,
+      url("../../images/tomato-paste.png") 85% 52% / 10.68vw 17.97vw no-repeat,
+      url("../../images/paper.png") 98% 75% / 23.44vw 15.63vw no-repeat;
+  }
+  @media (max-width: 800px) {
+    padding-bottom: 45vw;
+    background: url("../../images/tomato-paste.png") 17% 90%/19.68vw 33.97vw
+      no-repeat;
+  }
+  &__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    @media (max-width: 1920px) {
+      max-width: 67.71vw;
+    }
+    @media (max-width: 800px) {
+      max-width: 71.5vw;
+    }
+  }
+}
+.ingredients-result__book {
+  position: relative;
+  min-height: 930px;
+  @media (max-width: 1920px) {
+    min-height: 48.44vw;
+  }
+  @media (max-width: 800px) {
+    min-height: 100vw;
+  }
+  &-bg {
+    position: absolute;
+    top: -14%;
+    left: -48%;
+    width: 154%;
+    height: 132%;
+    z-index: -1;
+    @media (max-width: 800px) {
+      position: absolute;
+      top: -3%;
+      left: -24%;
+      width: 148%;
+      height: 136%;
+      z-index: -1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.ingredients-result__row {
+  position: relative;
+  display: flex;
+  gap: 55px;
+  max-width: 856px;
+  padding-top: 190px;
+  margin: 0 auto;
+  @media (max-width: 1920px) {
+    gap: 2.86vw;
+    max-width: 44.58vw;
+    padding-top: 9.9vw;
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 10vw;
+    max-width: 100%;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+}
+.ingredients-result__content {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 110px;
+  position: relative;
+  @media (max-width: 1920px) {
+    padding-bottom: 5.73vw;
+  }
+  @media (max-width: 800px) {
+    padding-bottom: 5.73vw;
+    align-items: center;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 155px;
+    height: 90px;
+    transform: translate(-50%, 0%);
+    background: url("../../images/tomatoes-with-leaf.png") 0 0 / 100% 100%
+      no-repeat;
+    @media (max-width: 1920px) {
+      bottom: 0.52vw;
+      width: 8.07vw;
+      height: 4.69vw;
+    }
+    @media (max-width: 800px) {
+      bottom: 0.52vw;
+      width: 8.07vw;
+      height: 4.69vw;
+      background: none;
+    }
+  }
+}
+.ingredients-result__title {
+  color: rgb(17, 132, 0);
+  font-family: Cocogoose Narrow;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  @media (max-width: 1920px) {
+    font-size: 1.88vw;
+    line-height: 2.34vw;
+  }
+  @media (max-width: 800px) {
+    font-size: 4.5vw;
+    line-height: 120%;
+  }
+}
+.green-color {
+}
+.ingredients-result__list {
+  margin-top: 60px;
+  @media (max-width: 1920px) {
+    margin-top: 3.13vw;
+  }
+  @media (max-width: 800px) {
+    margin-left: 7vw;
+  }
+}
+.ingredients-result__point {
+  color: rgb(0, 0, 0);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 2%;
+  text-align: left;
+  position: relative;
+  @media (max-width: 1920px) {
+    font-size: 1.04vw;
+    line-height: 1.25vw;
+  }
+  @media (max-width: 800px) {
+    font-size: 2.5vw;
+    line-height: 120%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 3px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 50%;
+    @media (max-width: 1920px) {
+      top: 0.52vw;
+      left: -0.78vw;
+      width: 0.16vw;
+      height: 0.16vw;
+    }
+    @media (max-width: 800px) {
+      top: 1.25vw;
+      left: -1.88vw;
+      width: 0.48vw;
+      height: 0.48vw;
+    }
+  }
+}
+.ingredients-result__image {
+  flex: 0 1 50%;
+  @media (max-width: 800px) {
+    flex: 1 1 auto;
+    position: relative;
+    min-height: 50vw;
+    img {
+      border-radius: 2.88vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.result__cookingmethod {
+}
+.cookingmethod-result {
+  background: url("../../images/tomato-paste.png") 5% 40%/205px 345px no-repeat,
+    url("../../images/leaf-small.png") 9% 60%/180px 250px no-repeat,
+    url("../../images/tomatoes.png") 108% 51%/371px 202px no-repeat;
+  @media (max-width: 1920px) {
+    background: url("../../images/tomato-paste.png") 5% 40%/10.68vw 17.97vw
+        no-repeat,
+      url("../../images/leaf-small.png") 9% 60%/9.38vw 13.02vw no-repeat,
+      url("../../images/tomatoes.png") 108% 51%/19.32vw 10.52vw no-repeat;
+  }
+  @media (max-width: 800px) {
+    background: none;
+  }
+}
+.cookingmethod-result__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  @media (max-width: 1920px) {
+    max-width: 67.71vw;
+  }
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
+}
+.cookingmethod-result__title {
+  color: rgb(17, 132, 0);
+  font-family: Cocogoose Narrow;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 79px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  @media (max-width: 1920px) {
+    font-size: 3.33vw;
+    line-height: 4.11vw;
+  }
+  @media (max-width: 800px) {
+    font-size: 8vw;
+    line-height: 9.88vw;
+  }
+}
+.cookingmethod-result__list {
+  margin-top: 65px;
+  @media (max-width: 1920px) {
+    margin-top: 3.39vw;
+  }
+  @media (max-width: 800px) {
+    margin-top: 3.39vw;
+	 padding-right: 10vw;
+  }
+}
+.cookingmethod-result__point {
+  margin-top: 25px;
+  display: flex;
+  @media (max-width: 1920px) {
+    margin-top: 3.75vw;
+  }
+  @media (max-width: 800px) {
+    margin-top: 5vw;
+  }
+  > span {
+    display: block;
+    color: rgb(255, 0, 43);
+    font-family: Doughy;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 108px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 146px;
+    position: relative;
+    @media (max-width: 1920px) {
+      font-size: 5vw;
+      line-height: 5.63vw;
+      min-width: 7.6vw;
+    }
+    @media (max-width: 800px) {
+      font-size: 12vw;
+      line-height: 13.5vw;
+      min-width: 16.88vw;
+    }
+    > span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 2%;
+    text-align: left;
+    @media (max-width: 1920px) {
+      font-size: 1.46vw;
+      line-height: 1.88vw;
+    }
+    @media (max-width: 800px) {
+      font-size: 3.5vw;
+      line-height: 4.5vw;
+    }
+  }
+}
+.cookingmethod-result__buttons {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  @media (max-width: 1920px) {
+    margin-top: 3.39vw;
+    gap: 2.08vw;
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+    gap: 0;
+  }
+}
+.cookingmethod-result__button {
+}
+.generate-again {
+}
+.button {
+}
+
+.button-about {
+}
+.cookingmethod-result__socialmedia {
+  padding-left: 150px;
+  margin-top: 30px;
+  @media (max-width: 1920px) {
+    padding-left: 7.81vw;
+    margin-top: 1.56vw;
+  }
+  @media (max-width: 800px) {
+    padding-left: 0;
+	 margin-top: 4.25vw;
+	 margin-bottom: 4.25vw;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+  }
+  span {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 2%;
+    text-align: left;
+    display: inline-block;
+    padding: 0 5px;
+    @media (max-width: 1920px) {
+      font-size: 1.46vw;
+      line-height: 1.88vw;
+      padding: 0 0.26vw;
+    }
+    @media (max-width: 800px) {
+      font-size: 3.5vw;
+      line-height: 120%;
+      padding: 0 0.26vw;
+    }
+  }
+  a {
+    display: inline-block;
+    margin-left: 15px;
+    width: 48px;
+    height: 48px;
+    @media (max-width: 1920px) {
+      margin-left: 0.78vw;
+      width: 2.5vw;
+      height: 2.5vw;
+    }
+    @media (max-width: 800px) {
+      margin-left: 2.78vw;
+      width: 6vw;
+      height: 6vw;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

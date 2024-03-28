@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Главная'
+		};
+
+block main
+	.container
+		include ../components/intro
+		include ../components/choice
+		include ../components/result
+		include ../components/other-users

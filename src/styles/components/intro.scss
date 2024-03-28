@@ -1,0 +1,114 @@
+.intro {
+}
+.intro__top {
+  padding: 50px 200px;
+  background: url("../../images/intro/salad.png") 0 0 / 260px 316px no-repeat,
+    url("../../images/intro/tomatoes.png") calc(100% + 308px) -140px / 617px 411px
+      no-repeat;
+  @media (max-width: 1920px) {
+    padding: 2.6vw 10.42vw;
+    background: url("../../images/intro/salad.png") 0 0 / 13.54vw 16.46vw
+        no-repeat,
+      url("../../images/intro/tomatoes.png") calc(100% + 16.04vw) -7.29vw / 32.14vw
+        21.41vw no-repeat;
+  }
+  @media (max-width: 800px) {
+    padding: 11.25vw 1.5vw;
+    background: url("../../images/intro/salad.png") 0 0 / 18.54vw 18.46vw
+        no-repeat,
+      url("../../images/intro/tomatoes.png") calc(100% + 16.04vw) -7.29vw / 42.14vw
+        21.41vw no-repeat;
+  }
+}
+.intro__image {
+  position: relative;
+  z-index: -1;
+  padding-top: 57%;
+  width: 100%;
+  background: url('../../images/intro/desktop/intro.jpg') center / cover no-repeat;
+  @media (max-width: 800px){
+	  background: url('../../images/intro/desktop/intro.jpg') 10% 0 / cover no-repeat;
+	  padding-top: 80%;
+	 
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 560px;
+    @media (max-width: 1920px) {
+      height: 29.17vw;
+    }
+    @media (max-width: 800px) {
+      height: 30.25vw;
+    }
+  }
+  &::before {
+    top: 0;
+    transform: translate(0, -40%);
+    background: url("../../images/intro/desktop/intro-top.png") 0 0 / 100% 100%
+      no-repeat;
+  }
+  &::after {
+    bottom: 0;
+    transform: translate(0, 40%);
+    background: url("../../images/intro/desktop/intro-bottom.png") 0 0 / 100%
+      100% no-repeat;
+  }
+}
+.bottom-intro {
+  padding: 60px 0;
+  background: url("../../images/leaf-big.png") 20px 60px / 220px 184px no-repeat,
+    url("../../images/leaf-small.png") 150px 170px / 113px 120px no-repeat,
+    url("../../images/tomatoes-with-leaf.png") calc(100% - -40px) 110px/490px
+      290px no-repeat;
+  text-align: center;
+  @media (max-width: 1920px) {
+    padding: 3.13vw 0;
+    background: url("../../images/leaf-big.png") 1.04vw 3.13vw / 11.46vw 9.58vw
+        no-repeat,
+      url("../../images/leaf-small.png") 7.81vw 8.85vw / 5.89vw 6.25vw no-repeat,
+      url("../../images/tomatoes-with-leaf.png") calc(100% - -2.08vw) 5.73vw/25.52vw
+        15.1vw no-repeat;
+  }
+  @media (max-width: 800px) {
+    padding: 10vw 0 30vw;
+    background: url("../../images/leaf-big.png") 1.04vw -3.13vw / 18.46vw 15.58vw
+        no-repeat,
+      url("../../images/leaf-small.png") 85.81vw -2.85vw / 10.89vw 16.25vw no-repeat,
+      url("../../images/tomatoes-with-leaf.png") 50% 100%/50.52vw
+        25.1vw no-repeat;
+  }
+}
+.bottom-intro__text {
+  color: rgb(0, 0, 0);
+  font-family: Gilroy;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 2%;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  @media (max-width: 1920px) {
+    font-size: 1.46vw;
+    line-height: 1.88vw;
+    max-width: 67.71vw;
+  }
+  @media (max-width: 800px) {
+    font-size: 3.5vw;
+    line-height: 4.50vw;
+    max-width: 83.50vw;
+  }
+}
+.bottom-intro__button {
+  margin-top: 30px;
+  @media (max-width: 1920px) {
+    margin-top: 1.56vw;
+  }
+  @media (max-width: 800px) {
+    margin-top: 5vw;
+  }
+}

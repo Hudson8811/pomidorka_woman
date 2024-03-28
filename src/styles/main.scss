@@ -1,0 +1,22 @@
+/* base */
+@import "base/reset";
+@import "base/fonts";
+
+
+/*libs*/
+@import "libs/swiper-bundle.min";
+
+
+/* main */
+@import "partials/main";
+
+/* components */
+@import "components/intro";
+@import "components/choice";
+@import "components/result";
+@import "components/other-users";
+
+
+
+
+
