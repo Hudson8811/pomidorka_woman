@@ -163,7 +163,12 @@ h3 {
       @media (max-width: 1920px) {
          width: 24.22vw;
          height: 24.22vw;
-         padding: 3.13vw;
+			padding: 3.13vw;
+      }
+      @media (max-width: 800px) {
+			width: 58.13vw;
+         height: 58.13vw;
+			padding: 8vw;
       }
       img {
          width: 100%;
