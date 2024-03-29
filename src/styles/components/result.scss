@@ -7,7 +7,7 @@
    }
    @media (max-width: 800px) {
       padding: 48.13vw 0 8.13vw;
-      background: url("../../images/leaf-big.png") 98% 10%/16.73vw 19.85vw
+      background: url("../images/leaf-big.png") 98% 10%/16.73vw 19.85vw
          no-repeat;
    }
    &__dish {
@@ -48,20 +48,21 @@
 .result__ingredients {
 }
 .ingredients-result {
-   background: url("../../images/salad.png") 6% -4% / 250px 300px no-repeat,
-      url("../../images/leaf-small.png") 79% 10% / 110px 170px no-repeat,
-      url("../../images/tomato-paste.png") 85% 52% / 205px 345px no-repeat,
-      url("../../images/paper.png") 98% 75% / 450px 300px no-repeat;
+   background: url("../images/salad.png") 6% -4% / 250px 300px no-repeat,
+      url("../images/leaf-small.png") 79% 10% / 110px 170px no-repeat,
+      url("/") 79% 10% / 110px 170px no-repeat,
+      url("../images/tomato-paste.png") 85% 52% / 205px 345px no-repeat,
+      url("../images/paper.png") 98% 75% / 450px 300px no-repeat;
    @media (max-width: 1920px) {
-      background: url("../../images/salad.png") 6% -4% / 13.02vw 15.63vw no-repeat,
-         url("../../images/leaf-small.png") 79% 10% / 5.73vw 8.85vw no-repeat,
-         url("../../images/tomato-paste.png") 85% 52% / 10.68vw 17.97vw
+      background: url("../images/salad.png") 6% -4% / 13.02vw 15.63vw no-repeat,
+         url("../images/leaf-small.png") 79% 10% / 5.73vw 8.85vw no-repeat,
+         url("../images/tomato-paste.png") 85% 52% / 10.68vw 17.97vw
             no-repeat,
-         url("../../images/paper.png") 98% 75% / 23.44vw 15.63vw no-repeat;
+         url("../images/paper.png") 98% 75% / 23.44vw 15.63vw no-repeat;
    }
    @media (max-width: 800px) {
       padding-bottom: 45vw;
-      background: url("../../images/tomato-paste.png") 17% 90%/19.68vw 33.97vw
+      background: url("../images/tomato-paste.png") 17% 90%/19.68vw 33.97vw
          no-repeat;
    }
    &__container {
@@ -147,7 +148,7 @@
       width: 155px;
       height: 90px;
       transform: translate(-50%, 0%);
-      background: url("../../images/tomatoes-with-leaf.png") 0 0 / 100% 100%
+      background: url("../images/tomatoes-with-leaf.png") 0 0 / 100% 100%
          no-repeat;
       @media (max-width: 1920px) {
          bottom: 0.52vw;
@@ -256,14 +257,14 @@
 .result__cookingmethod {
 }
 .cookingmethod-result {
-   background: url("../../images/tomato-paste.png") 5% 40%/205px 345px no-repeat,
-      url("../../images/leaf-small.png") 9% 60%/180px 250px no-repeat,
-      url("../../images/tomatoes.png") 108% 51%/371px 202px no-repeat;
+   background: url("../images/tomato-paste.png") 5% 40%/205px 345px no-repeat,
+      url("../images/leaf-small.png") 9% 60%/180px 250px no-repeat,
+      url("../images/tomatoes.png") 108% 51%/371px 202px no-repeat;
    @media (max-width: 1920px) {
-      background: url("../../images/tomato-paste.png") 5% 40%/10.68vw 17.97vw
+      background: url("../images/tomato-paste.png") 5% 40%/10.68vw 17.97vw
             no-repeat,
-         url("../../images/leaf-small.png") 9% 60%/9.38vw 13.02vw no-repeat,
-         url("../../images/tomatoes.png") 108% 51%/19.32vw 10.52vw no-repeat;
+         url("../images/leaf-small.png") 9% 60%/9.38vw 13.02vw no-repeat,
+         url("../images/tomatoes.png") 108% 51%/19.32vw 10.52vw no-repeat;
    }
    @media (max-width: 800px) {
       background: none;

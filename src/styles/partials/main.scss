@@ -24,8 +24,8 @@ h1 {
       line-height: 5vw;
    }
    @media (max-width: 800px) {
-      font-size: 64px;
-      line-height: 68px;
+      font-size: 8vw;
+      line-height: 8.5vw;
    }
    span {
       font-size: 62px;
@@ -37,8 +37,8 @@ h1 {
          line-height: 4.69vw;
       }
       @media (max-width: 800px) {
-         font-size: 48px;
-         line-height: 57px;
+         font-size: 6vw;
+         line-height: 7.13vw;
       }
    }
 }
@@ -135,10 +135,10 @@ h3 {
       padding: 1.04vw 3.13vw;
    }
    @media (max-width: 800px) {
-      border-radius: 50px;
-      font-size: 40px;
-      line-height: 49px;
-      padding: 20px 60px;
+      border-radius: 6.25vw;
+      font-size: 5vw;
+      line-height: 6.13vw;
+      padding: 2.5vw 7.50vw;
    }
    &.green-button {
       background-color: #118400;
