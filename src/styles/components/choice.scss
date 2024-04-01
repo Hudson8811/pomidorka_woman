@@ -111,14 +111,14 @@
 }
 .choice__item {
    &.active {
-      background: url("../images/arrow-red.png") 94% 7% / 70px 70px no-repeat;
+      background: url("../images/arrow-red.png") 94% 10% / 70px 70px no-repeat;
    }
 
    @media (max-width: 1920px) {
       padding: 40px 30px;
 
       &.active {
-         background: url("../images/arrow-red.png") 94% 7% / 3.7vw 3.7vw no-repeat;
+         background: url("../images/arrow-red.png") 94% 10% / 3.7vw 3.7vw no-repeat;
       }
    }
    @media (max-width: 801px) {
