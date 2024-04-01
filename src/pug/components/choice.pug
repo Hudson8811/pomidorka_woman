@@ -1,8 +1,8 @@
 .choice
-	.choice__recipe.recipe-choice
+	.choice__block.choice__recipe.recipe-choice.show.js-choice-block-1
 		h2.choice__title.red-color.lines
 			span ВЫБЕРИТЕ РЕЦЕПТ
-		.swiper.swiper-recipe.choice__items.js-recipe-items
+		.choice__block.swiper.swiper-recipe.choice__items.show.js-recipe-items
 			.swiper-wrapper.choice__row 
 				.swiper-slide.choice__item.item(data-recipe='porkribs')
 					.choice__column.item__column.choose 
@@ -42,7 +42,7 @@
 
 			.swiper-arrow.swiper-arrow-prev
 			.swiper-arrow.swiper-arrow-next
-	.choice__style.style-choice
+	.choice__block.choice__style.style-choice.js-choice-block-2
 		h2.choice__title.red-color.lines
 			span ВЫБЕРИТЕ СТИЛЬ ГОТОВКИ:
 		.swiper.swiper-style.choice__items.js-author-items
@@ -67,7 +67,7 @@
 
 			.swiper-arrow.swiper-arrow-prev
 			.swiper-arrow.swiper-arrow-next
-	.choice__extra.extra-choice
+	.choice__block.choice__extra.extra-choice.js-choice-block-3
 		h2.choice__title.red-color
 			span ВЫБЕРИТЕ ДОПОЛНИТЕЛЬНЫЕ ИНГРЕДИЕНТЫ
 		.swiper.swiper-extra.choice__items.js-toppings-items
@@ -92,5 +92,5 @@
 
 			.swiper-arrow.swiper-arrow-prev
 			.swiper-arrow.swiper-arrow-next
-	.choice__get-result-button
-		.get-result-button.button.button-disabled.js-recipe-submit СГЕНЕРИРОВАТЬ РЕЦЕПТ
+	.choice__block.choice__get-result-button.js-choice-block-3
+		.get-result-button.button.js-recipe-submit СГЕНЕРИРОВАТЬ РЕЦЕПТ

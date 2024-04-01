@@ -5,6 +5,13 @@
          display: block;
       }
    }
+   &__block {
+      display: none;
+
+      &.show {
+         display: block;
+      }
+   }
    &__recipe {
       padding: 100px 0 200px;
       overflow: hidden;
@@ -35,20 +42,20 @@
       padding: 100px 0 200px;
       overflow: hidden;
       background: url("../images/towel.png") -30% 80% / 700px 600px no-repeat,
-         url("../images/tomatoes.png") 120% -20% / 674px 450px no-repeat,
-         url("../images/leaf-small.png") 5% 12% / 145px 215px no-repeat,
+         //url("../images/tomatoes.png") 120% -20% / 674px 450px no-repeat,
+         url("../images/leaf-small.png") 95% 12% / 145px 215px no-repeat,
          url("../images/leaf-big.png") 0% 25% / 186px 274px no-repeat,
          url("../images/paper.png") 30% 100% / 452px 300px no-repeat,
-         url("../images/salad.png") 107% 105% / 351px 426px no-repeat;
+         url("../images/salad.png") 107% 75% / 351px 426px no-repeat;
       @media (max-width: 1920px) {
          padding: 5.21vw 0 10.42vw;
 
          background: url("../images/towel.png") -30% 80% / 36.46vw 31.25vw no-repeat,
-            url("../images/tomatoes.png") 120% -20% / 35.1vw 23.44vw no-repeat,
-            url("../images/leaf-small.png") 5% 12% / 7.55vw 11.2vw no-repeat,
+            //url("../images/tomatoes.png") 120% -20% / 35.1vw 23.44vw no-repeat,
+            url("../images/leaf-small.png") 95% 12% / 7.55vw 11.2vw no-repeat,
             url("../images/leaf-big.png") 0% 25% / 9.69vw 14.27vw no-repeat,
             url("../images/paper.png") 30% 100% / 23.54vw 15.63vw no-repeat,
-            url("../images/salad.png") 107% 105% / 18.28vw 22.19vw no-repeat;
+            url("../images/salad.png") 107% 75% / 18.28vw 22.19vw no-repeat;
       }
       @media (max-width: 800px) {
          padding: 5.21vw 0 10.42vw;
@@ -64,19 +71,19 @@
       padding: 100px 0 200px;
       overflow: hidden;
       background: url("../images/towel.png") -30% 80% / 700px 600px no-repeat,
-         url("../images/tomatoes.png") 120% -20% / 500px 350px no-repeat,
-         url("../images/leaf-small.png") 5% 12% / 145px 215px no-repeat,
+         //url("../images/tomatoes.png") 120% -20% / 500px 350px no-repeat,
+         url("../images/leaf-small.png") 95% 12% / 145px 215px no-repeat,
          url("../images/leaf-big.png") 0% 25% / 186px 274px no-repeat,
          url("../images/paper.png") 30% 100% / 452px 300px no-repeat,
-         url("../images/salad.png") 107% 105% / 351px 426px no-repeat;
+         url("../images/salad.png") 107% 75% / 351px 426px no-repeat;
       @media (max-width: 1920px) {
          padding: 5.21vw 0 10.42vw;
          background: url("../images/towel.png") -30% 80% / 36.46vw 31.25vw no-repeat,
-            url("../images/tomatoes.png") 120% -20% / 26.04vw 18.23vw no-repeat,
-            url("../images/leaf-small.png") 5% 12% / 7.55vw 11.2vw no-repeat,
+            //url("../images/tomatoes.png") 120% -20% / 26.04vw 18.23vw no-repeat,
+            url("../images/leaf-small.png") 95% 12% / 7.55vw 11.2vw no-repeat,
             url("../images/leaf-big.png") 0% 25% / 9.69vw 14.27vw no-repeat,
             url("../images/paper.png") 30% 100% / 23.54vw 15.63vw no-repeat,
-            url("../images/salad.png") 107% 105% / 18.28vw 22.19vw no-repeat;
+            url("../images/salad.png") 107% 75% / 18.28vw 22.19vw no-repeat;
       }
       @media (max-width: 800px) {
          padding: 5.21vw 0 10.42vw;
