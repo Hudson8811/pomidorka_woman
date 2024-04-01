@@ -24,39 +24,39 @@
         <div class="choice">
           <div class="choice__recipe recipe-choice">
             <h2 class="choice__title red-color lines"><span>ВЫБЕРИТЕ РЕЦЕПТ</span></h2>
-            <div class="swiper swiper-recipe choice__items">
+            <div class="swiper swiper-recipe choice__items js-recipe-items">
               <div class="swiper-wrapper choice__row"> 
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-recipe="porkribs">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/recipe/1.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">ребра</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-recipe="shakshuka">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/recipe/2.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">Шакшука</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-recipe="countrypie">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/recipe/3.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">деревенский пирог</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-recipe="eggplants">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/recipe/4.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">баклажаны</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-recipe="drumsticks">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/recipe/5.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">куриные ножки</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-recipe="burgers">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/recipe/6.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">бургеры</h3>
@@ -69,21 +69,21 @@
           </div>
           <div class="choice__style style-choice">
             <h2 class="choice__title red-color lines"><span>ВЫБЕРИТЕ СТИЛЬ ГОТОВКИ:</span></h2>
-            <div class="swiper swiper-style choice__items">
+            <div class="swiper swiper-style choice__items js-author-items">
               <div class="swiper-wrapper choice__row"> 
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-author="papa">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/style/1.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">Папин подход</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-author="mama">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/style/2.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">От мамы с любовью</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-author="kid">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/style/3.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">Крошка-поварешка</h3>
@@ -96,21 +96,21 @@
           </div>
           <div class="choice__extra extra-choice">
             <h2 class="choice__title red-color"><span>ВЫБЕРИТЕ ДОПОЛНИТЕЛЬНЫЕ ИНГРЕДИЕНТЫ</span></h2>
-            <div class="swiper swiper-extra choice__items">
+            <div class="swiper swiper-extra choice__items js-toppings-items">
               <div class="swiper-wrapper choice__row"> 
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-topping="тертый сыр">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/extra/1.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">тертый сыр</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-topping="сухарики">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/extra/2.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">сухарики</h3>
                   </div>
                 </div>
-                <div class="swiper-slide choice__item item"> 
+                <div class="swiper-slide choice__item item" data-topping="зеленый горошек">
                   <div class="choice__column item__column choose"> 
                     <div class="choice__image item__image"> <img src="images/choice/extra/3.png" alt="alt"></div>
                     <h3 class="choice__subtitle item__title">зеленый горошек</h3>
@@ -122,7 +122,7 @@
             </div>
           </div>
           <div class="choice__get-result-button">
-            <div class="get-result-button button">СГЕНЕРИРОВАТЬ РЕЦЕПТ</div>
+            <div class="get-result-button button button-disabled js-recipe-submit">СГЕНЕРИРОВАТЬ РЕЦЕПТ</div>
           </div>
         </div>
         <div class="other-users">
