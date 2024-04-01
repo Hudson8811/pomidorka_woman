@@ -85,6 +85,19 @@ $(document).ready(function() {
 		$('.preloader').removeClass( 'show' );
 	}
 
+	function get_status(id=0, timerId)
+	{
+		$.post( "/send_order/", {type: "get_status", id: id})
+		.done(function( data ) {
+			var res = JSON.parse(data)
+			if(res.status=='COMPLETE')
+			{
+				clearInterval(timerId);
+				window.location.href = "/recipe/" + id + "/";
+			}
+		});
+	}
+
 	//SUBMIT
 	$('.js-recipe-submit').click(function(){
 
@@ -96,20 +109,21 @@ $(document).ready(function() {
 
 			
 			showPreloader();
-			setTimeout(hidePreloader, 2000);
 
 			//AJAX
 			$.post(
 				"/send_order/",
 				{
+					type: 'generate',
 					recipe: recipeValue,
 					author: authorValue,
 					toppings: toppingsValue,
 				}
 			)
 			.done(function( data ) {
-				//Работа с данными, переадресация
-				//hidePreloader();
+				if(data!='') {
+					let timerId = setInterval(() => get_status(data, timerId), 2000);
+				}
 			});
 		}
 	});
