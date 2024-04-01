@@ -51,7 +51,7 @@ $(document).ready(function() {
 	});
 })
 
-/*
+
 $(document).ready(function() {
 
 	$('.js-recipe-items [data-recipe]').click(function(){
@@ -111,4 +111,4 @@ $(document).ready(function() {
 		}
 	});
 })
-*/
+
