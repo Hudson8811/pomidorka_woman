@@ -86,6 +86,16 @@ $(document).ready(function() {
 		}
 	}
 
+	//Показать прелоадер
+	function showPreloader(){
+		$('.preloader').addClass( 'show' );
+	}
+	
+	//Скрыть прелоадер
+	function hidePreloader(){
+		$('.preloader').removeClass( 'show' );
+	}
+
 	//SUBMIT
 	$('.js-recipe-submit').click(function(){
 
@@ -95,6 +105,10 @@ $(document).ready(function() {
 		let toppingsValue = Array.from($('.js-toppings-items [data-topping].active'), n => n.dataset.topping).join(',');
 
 		if( buttonActive && recipeValue && authorValue ){
+
+			
+			showPreloader();
+			setTimeout(hidePreloader, 2000);
 
 			//AJAX
 			$.post(
@@ -107,6 +121,7 @@ $(document).ready(function() {
 			)
 			.done(function( data ) {
 				//Работа с данными, переадресация
+				//hidePreloader();
 			});
 		}
 	});
