@@ -50,3 +50,65 @@ $(document).ready(function() {
 		toggleSwiper();
 	});
 })
+
+/*
+$(document).ready(function() {
+
+	$('.js-recipe-items [data-recipe]').click(function(){
+
+		$(".js-recipe-items [data-recipe]").removeClass( 'active' );
+		$(this).addClass( 'active' );
+
+		submitActiveCheck();
+	});
+	$('.js-author-items [data-author]').click(function(){
+
+		$('.js-author-items [data-author]').removeClass( 'active' );
+		$(this).addClass( 'active' );
+
+		submitActiveCheck();
+	});
+
+	$('.js-toppings-items [data-topping]').click(function(){
+		$(this).toggleClass( 'active' );
+	});
+
+	//CHECK ACTIVE ITEMS
+	function submitActiveCheck(){
+
+		let recipeItem = $('.js-recipe-items [data-recipe].active').length;
+		let authorItem = $('.js-author-items [data-author].active').length;
+
+		if( recipeItem && authorItem ){
+			$('.js-recipe-submit').removeClass( 'button-disabled' );
+		} else {
+			$('.js-recipe-submit').addClass( 'button-disabled' );
+		}
+	}
+
+	//SUBMIT
+	$('.js-recipe-submit').click(function(){
+
+		let buttonActive = !$(this).hasClass( 'button-disabled' );
+		let recipeValue = $('.js-recipe-items [data-recipe].active').data('recipe');
+		let authorValue = $('.js-author-items [data-author].active').data('author');
+		let toppingsValue = Array.from($('.js-toppings-items [data-topping].active'), n => n.dataset.topping).join(',');
+
+		if( buttonActive && recipeValue && authorValue ){
+
+			//AJAX
+			$.post(
+				"/send_order/",
+				{
+					recipe: recipeValue,
+					author: authorValue,
+					toppings: toppingsValue,
+				}
+			)
+			.done(function( data ) {
+				//Работа с данными, переадресация
+			});
+		}
+	});
+})
+*/
