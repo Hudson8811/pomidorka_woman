@@ -2,83 +2,95 @@
 	.choice__recipe.recipe-choice
 		h2.choice__title.red-color.lines
 			span ВЫБЕРИТЕ РЕЦЕПТ
-		.swiper.swiper-recipe.choice__items
+		.swiper.swiper-recipe.choice__items.js-recipe-items
 			.swiper-wrapper.choice__row 
-				.swiper-slide.choice__item.item 
+				.swiper-slide.choice__item.item(data-recipe='porkribs')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/recipe/1.png", alt="alt")
 						h3.choice__subtitle.item__title ребра
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-recipe='shakshuka')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/recipe/2.png", alt="alt")
 						h3.choice__subtitle.item__title Шакшука
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-recipe='countrypie')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/recipe/3.png", alt="alt")
 						h3.choice__subtitle.item__title деревенский пирог
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-recipe='eggplants')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/recipe/4.png", alt="alt")
 						h3.choice__subtitle.item__title баклажаны
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-recipe='drumsticks')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/recipe/5.png", alt="alt")
 						h3.choice__subtitle.item__title куриные ножки
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-recipe='burgers')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/recipe/6.png", alt="alt")
 						h3.choice__subtitle.item__title бургеры
+
 			.swiper-arrow.swiper-arrow-prev
 			.swiper-arrow.swiper-arrow-next
 	.choice__style.style-choice
 		h2.choice__title.red-color.lines
 			span ВЫБЕРИТЕ СТИЛЬ ГОТОВКИ:
-		.swiper.swiper-style.choice__items
+		.swiper.swiper-style.choice__items.js-author-items
 			.swiper-wrapper.choice__row 
-				.swiper-slide.choice__item.item 
+				.swiper-slide.choice__item.item(data-author='papa')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/style/1.png", alt="alt")
 						h3.choice__subtitle.item__title Папин подход
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-author='mama')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/style/2.png", alt="alt")
 						h3.choice__subtitle.item__title От мамы с любовью
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-author='kid')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/style/3.png", alt="alt")
 						h3.choice__subtitle.item__title Крошка-поварешка
+
 			.swiper-arrow.swiper-arrow-prev
 			.swiper-arrow.swiper-arrow-next
 	.choice__extra.extra-choice
 		h2.choice__title.red-color
 			span ВЫБЕРИТЕ ДОПОЛНИТЕЛЬНЫЕ ИНГРЕДИЕНТЫ
-		.swiper.swiper-extra.choice__items
+		.swiper.swiper-extra.choice__items.js-toppings-items
 			.swiper-wrapper.choice__row 
-				.swiper-slide.choice__item.item 
+				.swiper-slide.choice__item.item(data-topping='тертый сыр')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/extra/1.png", alt="alt")
 						h3.choice__subtitle.item__title тертый сыр
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-topping='сухарики')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/extra/2.png", alt="alt")
 						h3.choice__subtitle.item__title сухарики
-				.swiper-slide.choice__item.item 
+
+				.swiper-slide.choice__item.item(data-topping='зеленый горошек')
 					.choice__column.item__column.choose 
 						.choice__image.item__image 
 							img(src="images/choice/extra/3.png", alt="alt")
 						h3.choice__subtitle.item__title зеленый горошек
+
 			.swiper-arrow.swiper-arrow-prev
 			.swiper-arrow.swiper-arrow-next
 	.choice__get-result-button
-		.get-result-button.button СГЕНЕРИРОВАТЬ РЕЦЕПТ
+		.get-result-button.button.button-disabled.js-recipe-submit СГЕНЕРИРОВАТЬ РЕЦЕПТ
