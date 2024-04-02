@@ -1,11 +1,26 @@
 $(document).ready(function() {
-	var users__swiper = new Swiper(".other-users__swiper", {
+	var users__swiper = new Swiper(".js-other-users-slider", {
 		navigation: {
 			prevEl: ".other-users .swiper-arrow-prev",
 			nextEl: ".other-users .swiper-arrow-next",
 		},
 		slidesPerView: 1,
 		spaceBetween: 65,
+		breakpoints: {
+			801: {
+				slidesPerView: 3
+			}
+		}
+	});
+
+	
+	var choice__extra = new Swiper(".js-toppings-items", {
+		slidesPerView: 1,
+		spaceBetween: 65,
+		navigation: {
+			prevEl: ".choice__extra .swiper-arrow-prev",
+			nextEl: ".choice__extra .swiper-arrow-next",
+		},
 		breakpoints: {
 			801: {
 				slidesPerView: 3
@@ -34,13 +49,14 @@ $(document).ready(function() {
 					},
 					slidesPerView: 1,
 			});
+			/*
 			var choice__items = new Swiper('.swiper-extra', {
 					navigation: {
 						prevEl: ".swiper-extra .swiper-arrow-prev",
 						nextEl: ".swiper-extra .swiper-arrow-next",
 					},
 					slidesPerView: 1,
-			});
+			});*/
 		}
 	}
 

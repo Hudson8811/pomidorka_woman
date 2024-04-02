@@ -76,6 +76,11 @@
          url("../images/leaf-big.png") 0% 25% / 186px 274px no-repeat,
          url("../images/paper.png") 30% 100% / 452px 300px no-repeat,
          url("../images/salad.png") 107% 75% / 351px 426px no-repeat;
+
+      .swiper-arrow {
+         display: block;
+      }
+
       @media (max-width: 1920px) {
          padding: 5.21vw 0 10.42vw;
          background: url("../images/towel.png") -30% 80% / 36.46vw 31.25vw no-repeat,

@@ -39,6 +39,20 @@
    }
 }
 .other-users__item {
+   &.active {
+      background: url("../images/arrow-red.png") 90% 4% / 70px 70px no-repeat;
+   }
+
+   @media (max-width: 1920px) {
+      &.active {
+         background: url("../images/arrow-red.png") 98% 0% / 3.7vw 3.7vw no-repeat;
+      }
+   }
+   @media (max-width: 801px) {
+      &.active {
+         background: url("../images/arrow-red.png") 90% 4% / 6.7vw 6.7vw no-repeat;
+      }
+   }
 }
 .other-users__column {
 }

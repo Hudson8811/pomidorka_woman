@@ -70,25 +70,27 @@
 	.choice__block.choice__extra.extra-choice.js-choice-block-3
 		h2.choice__title.red-color
 			span ВЫБЕРИТЕ ДОПОЛНИТЕЛЬНЫЕ ИНГРЕДИЕНТЫ
-		.swiper.swiper-extra.choice__items.js-toppings-items
-			.swiper-wrapper.choice__row 
-				.swiper-slide.choice__item.item(data-topping='тертый сыр')
-					.choice__column.item__column.choose 
-						.choice__image.item__image 
-							img(src="images/choice/extra/1.png", alt="alt")
-						h3.choice__subtitle.item__title тертый сыр
 
-				.swiper-slide.choice__item.item(data-topping='сухарики')
-					.choice__column.item__column.choose 
-						.choice__image.item__image 
-							img(src="images/choice/extra/2.png", alt="alt")
-						h3.choice__subtitle.item__title сухарики
+		.other-users__wraper
+			.other-users__swiper.swiper.js-toppings-items
+				.swiper-wrapper 
+					.other-users__item.item.swiper-slide(data-topping='тертый сыр') 
+						.other-users__column.item__column 
+							.other-users__image.item__image 
+								img(src="images/other-users/1.png", alt="alt")
+							h3.other-users__subtitle.item__title тертый сыр
 
-				.swiper-slide.choice__item.item(data-topping='зеленый горошек')
-					.choice__column.item__column.choose 
-						.choice__image.item__image 
-							img(src="images/choice/extra/3.png", alt="alt")
-						h3.choice__subtitle.item__title зеленый горошек
+					.other-users__item.item.swiper-slide(data-topping='сухарики')
+						.other-users__column.item__column 
+							.other-users__image.item__image 
+								img(src="images/other-users/2.png", alt="alt")
+							h3.other-users__subtitle.item__title сухарики
+
+					.other-users__item.item.swiper-slide(data-topping='зеленый горошек')
+						.other-users__column.item__column
+							.other-users__image.item__image 
+								img(src="images/other-users/3.png", alt="alt")
+							h3.other-users__subtitle.item__title зеленый горошек
 
 			.swiper-arrow.swiper-arrow-prev
 			.swiper-arrow.swiper-arrow-next
