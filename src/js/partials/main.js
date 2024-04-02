@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	AOS.init();
+
 	var users__swiper = new Swiper(".js-other-users-slider", {
 		navigation: {
 			prevEl: ".other-users .swiper-arrow-prev",
@@ -93,7 +95,8 @@ $(document).ready(function() {
 
 	//Показать прелоадер
 	function showPreloader(){
-		$('.preloader').addClass( 'show' );
+		$( ".preloader" ).fadeTo( 900 , 1, function() {});
+		//$('.preloader').addClass( 'show' );
 	}
 	
 	//Скрыть прелоадер
