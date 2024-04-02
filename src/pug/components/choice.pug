@@ -71,28 +71,83 @@
 		h2.choice__title.red-color
 			span ВЫБЕРИТЕ ДОПОЛНИТЕЛЬНЫЕ ИНГРЕДИЕНТЫ
 
-		.other-users__wraper
-			.other-users__swiper.swiper.js-toppings-items
-				.swiper-wrapper 
-					.other-users__item.item.swiper-slide(data-topping='тертый сыр') 
-						.other-users__column.item__column 
-							.other-users__image.item__image 
-								img(src="images/other-users/1.png", alt="alt")
-							h3.other-users__subtitle.item__title тертый сыр
-
-					.other-users__item.item.swiper-slide(data-topping='сухарики')
-						.other-users__column.item__column 
-							.other-users__image.item__image 
-								img(src="images/other-users/2.png", alt="alt")
-							h3.other-users__subtitle.item__title сухарики
-
-					.other-users__item.item.swiper-slide(data-topping='зеленый горошек')
-						.other-users__column.item__column
-							.other-users__image.item__image 
-								img(src="images/other-users/3.png", alt="alt")
-							h3.other-users__subtitle.item__title зеленый горошек
+		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='porkribs')
+			.other-users__swiper.swiper
+				.swiper-wrapper
+					each val in [{name: 'кефир', img: 'kefir.png'},{name: 'копченая паприка', img: 'kopchenaya-paprika.png'},{name: 'овощи', img: 'ovoshchi.png'},{name: 'бекон', img: 'bekon.png'},{name: 'безалкогольное Пиво', img: 'bezalkogolnoe-pivo.png'},{name: 'грибы', img: 'griby.png'},{name: 'мед', img: 'med.png'},{name: 'кетчуп', img: 'ketchup.png'},{name: 'консервированная кукуруза', img: 'konservirovannaya-kukuruza.png'}]
+						.other-users__item.item.swiper-slide(data-topping=val.name) 
+							.other-users__column.item__column 
+								.other-users__image.item__image 
+									img(src="images/choice/extra/" + val.img, alt="alt")
+								h3.other-users__subtitle.item__title=val.name
 
 			.swiper-arrow.swiper-arrow-prev
 			.swiper-arrow.swiper-arrow-next
+		
+		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='shakshuka')
+			.other-users__swiper.swiper
+				.swiper-wrapper
+					each val in [{name: 'баклажаны', img: 'baklazhany.png'},{name: 'сыр фета', img: 'syr-feta.png'},{name: 'нут или чечевица', img: 'nut-ili-chechevitsa.png'},{name: 'колбаски', img: 'kolbaski.png'},{name: 'зеленый лук', img: 'zelenyy-luk.png'},{name: 'чили', img: 'chili.png'},{name: 'тертый сыр', img: 'tertyy-syr.png'},{name: 'сухарики', img: 'sukhariki.png'},{name: 'зеленый горошек', img: 'zelenyy-goroshek.png'}]
+						.other-users__item.item.swiper-slide(data-topping=val.name) 
+							.other-users__column.item__column 
+								.other-users__image.item__image 
+									img(src="images/choice/extra/" + val.img, alt="alt")
+								h3.other-users__subtitle.item__title=val.name
+
+			.swiper-arrow.swiper-arrow-prev
+			.swiper-arrow.swiper-arrow-next
+		
+		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='countrypie')
+			.other-users__swiper.swiper
+				.swiper-wrapper
+					each val in [{name: 'Зелень', img: 'zelen.png'},{name: 'сыр фета', img: 'syr-feta.png'},{name: 'шампиньоны', img: 'shampinony.png'},{name: 'рис', img: 'ris.png'},{name: 'твердый сыр', img: 'tverdyy-syr.png'},{name: 'специи', img: 'spetsii.png'},{name: 'сосиски', img: 'sosiski.png'},{name: 'яркие свежие овощи для украшения', img: 'yarkie-svezhie-ovoshchi-dlya-ukrasheniya.png'},{name: 'сметана', img: 'smetana.png'}]
+						.other-users__item.item.swiper-slide(data-topping=val.name) 
+							.other-users__column.item__column 
+								.other-users__image.item__image 
+									img(src="images/choice/extra/" + val.img, alt="alt")
+								h3.other-users__subtitle.item__title=val.name
+
+			.swiper-arrow.swiper-arrow-prev
+			.swiper-arrow.swiper-arrow-next
+		
+		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='eggplants')
+			.other-users__swiper.swiper
+				.swiper-wrapper
+					each val in [{name: 'куриное филе', img: 'kurinoe-file.png'},{name: 'свежие томаты', img: 'svezhie-tomaty.png'},{name: 'смесь специй', img: 'smes-spetsiy.png'},{name: 'ветчина', img: 'vetchina.png'},{name: 'майонез', img: 'mayonez.png'},{name: 'фарш', img: 'farsh.png'},{name: 'смородина, клубника или малина', img: 'smorodina-klubnika-ili-malina.png'},{name: 'чипсы', img: 'chipsy.png'},{name: 'свежие огурцы', img: 'svezhie-ogurtsy.png'}]
+						.other-users__item.item.swiper-slide(data-topping=val.name) 
+							.other-users__column.item__column 
+								.other-users__image.item__image 
+									img(src="images/choice/extra/" + val.img, alt="alt")
+								h3.other-users__subtitle.item__title=val.name
+
+			.swiper-arrow.swiper-arrow-prev
+			.swiper-arrow.swiper-arrow-next
+		
+		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='drumsticks')
+			.other-users__swiper.swiper
+				.swiper-wrapper
+					each val in [{name: 'тыквенные семечки', img: 'tykvennye-semechki.png'},{name: 'бальзамический уксус', img: 'balzamicheskiy-uksus.png'},{name: 'вустерширский соус', img: 'vustershirskiy-sous.png'},{name: 'картофель', img: 'kartofel.png'},{name: 'аджика', img: 'adzhika.png'},{name: 'белый лук', img: 'belyy-luk.png'},{name: 'яблоки и мед', img: 'yabloki-i-med.png'},{name: 'макароны', img: 'makarony.png'},{name: 'варенье', img: 'varene.png'}]
+						.other-users__item.item.swiper-slide(data-topping=val.name) 
+							.other-users__column.item__column 
+								.other-users__image.item__image 
+									img(src="images/choice/extra/" + val.img, alt="alt")
+								h3.other-users__subtitle.item__title=val.name
+
+			.swiper-arrow.swiper-arrow-prev
+			.swiper-arrow.swiper-arrow-next
+		
+		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='burgers')
+			.other-users__swiper.swiper
+				.swiper-wrapper
+					each val in [{name: 'свежие томаты', img: 'svezhie-tomaty.png'},{name: 'карамелизованный лук', img: 'karamelizovannyy-luk.png'},{name: 'кейл', img: 'keyl.png'},{name: 'маринованные огурцы', img: 'marinovannye-ogurtsy.png'},{name: 'белый лук', img: 'belyy-luk.png'},{name: 'горчица', img: 'gorchitsa.png'},{name: 'морковка', img: 'morkovka.png'},{name: 'груша', img: 'grusha.png'},{name: 'свежие огурцы', img: 'svezhie-ogurtsy.png'},{name: 'соленый поп-корн', img: 'solenyy-pop-korn.png'},{name: 'соевый соус', img: 'soevyy-sous.png'}]
+						.other-users__item.item.swiper-slide(data-topping=val.name) 
+							.other-users__column.item__column 
+								.other-users__image.item__image 
+									img(src="images/choice/extra/" + val.img, alt="alt")
+								h3.other-users__subtitle.item__title=val.name
+
+			.swiper-arrow.swiper-arrow-prev
+			.swiper-arrow.swiper-arrow-next
+	
 	.choice__block.choice__get-result-button.js-choice-block-3
 		.get-result-button.button.js-recipe-submit СГЕНЕРИРОВАТЬ РЕЦЕПТ
