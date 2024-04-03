@@ -89,7 +89,7 @@ $(document).ready(function() {
 
 		let recipeValue = $('.js-recipe-items [data-recipe].active').data('recipe');
 		if(recipeValue)
-			$('[data-recipe-extra=' + recipeValue + ']').addClass( 'active' );
+			$('[data-recipe-extra=' + recipeValue + ']').addClass( 'show' );
 
 	});
 	$('.js-author-items [data-author]').click(function(){
@@ -99,6 +99,10 @@ $(document).ready(function() {
 
 		$(".js-choice-block-2").removeClass( 'show' );
 		$(".js-choice-block-3").addClass( 'show' );
+
+		let authorValue = $('.js-author-items [data-author].active').data('author');
+		if(authorValue)
+			$('[data-type=' + authorValue + ']').addClass( 'show' );
 	});
 
 	$('.js-toppings-items [data-topping]').click(function(){

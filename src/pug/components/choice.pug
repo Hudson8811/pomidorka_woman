@@ -74,10 +74,10 @@
 		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='porkribs')
 			.other-users__swiper.swiper
 				.swiper-wrapper
-					each val in [{name: 'кефир', img: 'kefir.png'},{name: 'копченая паприка', img: 'kopchenaya-paprika.png'},{name: 'овощи', img: 'ovoshchi.png'},{name: 'бекон', img: 'bekon.png'},{name: 'безалкогольное Пиво', img: 'bezalkogolnoe-pivo.png'},{name: 'грибы', img: 'griby.png'},{name: 'мед', img: 'med.png'},{name: 'кетчуп', img: 'ketchup.png'},{name: 'консервированная кукуруза', img: 'konservirovannaya-kukuruza.png'}]
-						.other-users__item.item.swiper-slide(data-topping=val.name) 
-							.other-users__column.item__column 
-								.other-users__image.item__image 
+					each val in [{name: 'кефир', img: 'kefir.png', type: 'MAMA'},{name: 'копченая паприка', img: 'kopchenaya-paprika.png', type: 'MAMA'},{name: 'овощи', img: 'ovoshchi.png', type: 'MAMA'},{name: 'бекон', img: 'bekon.png', type: 'PAPA'},{name: 'безалкогольное Пиво', img: 'bezalkogolnoe-pivo.png', type: 'PAPA'},{name: 'грибы', img: 'griby.png', type: 'PAPA'},{name: 'мед', img: 'med.png', type: 'CHILD'},{name: 'кетчуп', img: 'ketchup.png', type: 'CHILD'},{name: 'консервированная кукуруза', img: 'konservirovannaya-kukuruza.png', type: 'CHILD'}]
+						.choice__extra-block.other-users__item.item.swiper-slide(data-topping=val.name, data-type=val.type)
+							.other-users__column.item__column
+								.other-users__image.item__image
 									img(src="images/choice/extra/" + val.img, alt="alt")
 								h3.other-users__subtitle.item__title=val.name
 
@@ -87,10 +87,10 @@
 		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='shakshuka')
 			.other-users__swiper.swiper
 				.swiper-wrapper
-					each val in [{name: 'баклажаны', img: 'baklazhany.png'},{name: 'сыр фета', img: 'syr-feta.png'},{name: 'нут или чечевица', img: 'nut-ili-chechevitsa.png'},{name: 'колбаски', img: 'kolbaski.png'},{name: 'зеленый лук', img: 'zelenyy-luk.png'},{name: 'чили', img: 'chili.png'},{name: 'тертый сыр', img: 'tertyy-syr.png'},{name: 'сухарики', img: 'sukhariki.png'},{name: 'зеленый горошек', img: 'zelenyy-goroshek.png'}]
-						.other-users__item.item.swiper-slide(data-topping=val.name) 
-							.other-users__column.item__column 
-								.other-users__image.item__image 
+					each val in [{name: 'баклажаны', img: 'baklazhany.png', type: 'MAMA'},{name: 'сыр фета', img: 'syr-feta.png', type: 'MAMA'},{name: 'нут или чечевица', img: 'nut-ili-chechevitsa.png', type: 'MAMA'},{name: 'колбаски', img: 'kolbaski.png', type: 'PAPA'},{name: 'зеленый лук', img: 'zelenyy-luk.png', type: 'PAPA'},{name: 'чили', img: 'chili.png', type: 'PAPA'},{name: 'тертый сыр', img: 'tertyy-syr.png', type: 'CHILD'},{name: 'сухарики', img: 'sukhariki.png', type: 'CHILD'},{name: 'зеленый горошек', img: 'zelenyy-goroshek.png', type: 'CHILD'}]
+						.choice__extra-block.other-users__item.item.swiper-slide(data-topping=val.name, data-type=val.type) 
+							.other-users__column.item__column
+								.other-users__image.item__image
 									img(src="images/choice/extra/" + val.img, alt="alt")
 								h3.other-users__subtitle.item__title=val.name
 
@@ -100,8 +100,8 @@
 		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='countrypie')
 			.other-users__swiper.swiper
 				.swiper-wrapper
-					each val in [{name: 'Зелень', img: 'zelen.png'},{name: 'сыр фета', img: 'syr-feta.png'},{name: 'шампиньоны', img: 'shampinony.png'},{name: 'рис', img: 'ris.png'},{name: 'твердый сыр', img: 'tverdyy-syr.png'},{name: 'специи', img: 'spetsii.png'},{name: 'сосиски', img: 'sosiski.png'},{name: 'яркие свежие овощи для украшения', img: 'yarkie-svezhie-ovoshchi-dlya-ukrasheniya.png'},{name: 'сметана', img: 'smetana.png'}]
-						.other-users__item.item.swiper-slide(data-topping=val.name) 
+					each val in [{name: 'Зелень', img: 'zelen.png', type: 'MAMA'},{name: 'сыр фета', img: 'syr-feta.png', type: 'MAMA'},{name: 'шампиньоны', img: 'shampinony.png', type: 'MAMA'},{name: 'рис', img: 'ris.png', type: 'PAPA'},{name: 'твердый сыр', img: 'tverdyy-syr.png', type: 'PAPA'},{name: 'специи', img: 'spetsii.png', type: 'PAPA'},{name: 'сосиски', img: 'sosiski.png', type: 'CHILD'},{name: 'яркие свежие овощи для украшения', img: 'yarkie-svezhie-ovoshchi-dlya-ukrasheniya.png', type: 'CHILD'},{name: 'сметана', img: 'smetana.png', type: 'CHILD'}]
+						.choice__extra-block.other-users__item.item.swiper-slide(data-topping=val.name, data-type=val.type) 
 							.other-users__column.item__column 
 								.other-users__image.item__image 
 									img(src="images/choice/extra/" + val.img, alt="alt")
@@ -113,8 +113,8 @@
 		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='eggplants')
 			.other-users__swiper.swiper
 				.swiper-wrapper
-					each val in [{name: 'куриное филе', img: 'kurinoe-file.png'},{name: 'свежие томаты', img: 'svezhie-tomaty.png'},{name: 'смесь специй', img: 'smes-spetsiy.png'},{name: 'ветчина', img: 'vetchina.png'},{name: 'майонез', img: 'mayonez.png'},{name: 'фарш', img: 'farsh.png'},{name: 'смородина, клубника или малина', img: 'smorodina-klubnika-ili-malina.png'},{name: 'чипсы', img: 'chipsy.png'},{name: 'свежие огурцы', img: 'svezhie-ogurtsy.png'}]
-						.other-users__item.item.swiper-slide(data-topping=val.name) 
+					each val in [{name: 'куриное филе', img: 'kurinoe-file.png', type: 'MAMA'},{name: 'свежие томаты', img: 'svezhie-tomaty.png', type: 'MAMA'},{name: 'смесь специй', img: 'smes-spetsiy.png', type: 'MAMA'},{name: 'ветчина', img: 'vetchina.png', type: 'PAPA'},{name: 'майонез', img: 'mayonez.png', type: 'PAPA'},{name: 'фарш', img: 'farsh.png', type: 'PAPA'},{name: 'смородина, клубника или малина', img: 'smorodina-klubnika-ili-malina.png', type: 'CHILD'},{name: 'чипсы', img: 'chipsy.png', type: 'CHILD'},{name: 'свежие огурцы', img: 'svezhie-ogurtsy.png', type: 'CHILD'}]
+						.choice__extra-block.other-users__item.item.swiper-slide(data-topping=val.name, data-type=val.type) 
 							.other-users__column.item__column 
 								.other-users__image.item__image 
 									img(src="images/choice/extra/" + val.img, alt="alt")
@@ -126,8 +126,8 @@
 		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='drumsticks')
 			.other-users__swiper.swiper
 				.swiper-wrapper
-					each val in [{name: 'тыквенные семечки', img: 'tykvennye-semechki.png'},{name: 'бальзамический уксус', img: 'balzamicheskiy-uksus.png'},{name: 'вустерширский соус', img: 'vustershirskiy-sous.png'},{name: 'картофель', img: 'kartofel.png'},{name: 'аджика', img: 'adzhika.png'},{name: 'белый лук', img: 'belyy-luk.png'},{name: 'яблоки и мед', img: 'yabloki-i-med.png'},{name: 'макароны', img: 'makarony.png'},{name: 'варенье', img: 'varene.png'}]
-						.other-users__item.item.swiper-slide(data-topping=val.name) 
+					each val in [{name: 'тыквенные семечки', img: 'tykvennye-semechki.png', type: 'MAMA'},{name: 'бальзамический уксус', img: 'balzamicheskiy-uksus.png', type: 'MAMA'},{name: 'вустерширский соус', img: 'vustershirskiy-sous.png', type: 'MAMA'},{name: 'картофель', img: 'kartofel.png', type: 'PAPA'},{name: 'аджика', img: 'adzhika.png', type: 'PAPA'},{name: 'белый лук', img: 'belyy-luk.png', type: 'PAPA'},{name: 'яблоки и мед', img: 'yabloki-i-med.png', type: 'CHILD'},{name: 'макароны', img: 'makarony.png', type: 'CHILD'},{name: 'варенье', img: 'varene.png', type: 'CHILD'}]
+						.choice__extra-block.other-users__item.item.swiper-slide(data-topping=val.name, data-type=val.type) 
 							.other-users__column.item__column 
 								.other-users__image.item__image 
 									img(src="images/choice/extra/" + val.img, alt="alt")
@@ -139,8 +139,8 @@
 		.choice__extra-block.other-users__wraper.js-toppings-items(data-recipe-extra='burgers')
 			.other-users__swiper.swiper
 				.swiper-wrapper
-					each val in [{name: 'свежие томаты', img: 'svezhie-tomaty.png'},{name: 'карамелизованный лук', img: 'karamelizovannyy-luk.png'},{name: 'кейл', img: 'keyl.png'},{name: 'маринованные огурцы', img: 'marinovannye-ogurtsy.png'},{name: 'белый лук', img: 'belyy-luk.png'},{name: 'горчица', img: 'gorchitsa.png'},{name: 'морковка', img: 'morkovka.png'},{name: 'груша', img: 'grusha.png'},{name: 'свежие огурцы', img: 'svezhie-ogurtsy.png'},{name: 'соленый поп-корн', img: 'solenyy-pop-korn.png'},{name: 'соевый соус', img: 'soevyy-sous.png'}]
-						.other-users__item.item.swiper-slide(data-topping=val.name) 
+					each val in [{name: 'свежие томаты', img: 'svezhie-tomaty.png', type: 'MAMA'},{name: 'карамелизованный лук', img: 'karamelizovannyy-luk.png', type: 'MAMA'},{name: 'кейл', img: 'keyl.png', type: 'MAMA'},{name: 'маринованные огурцы', img: 'marinovannye-ogurtsy.png', type: 'PAPA'},{name: 'белый лук', img: 'belyy-luk.png', type: 'PAPA'},{name: 'горчица', img: 'gorchitsa.png', type: 'PAPA'},{name: 'морковка', img: 'morkovka.png', type: 'CHILD'},{name: 'груша', img: 'grusha.png', type: 'CHILD'},{name: 'свежие огурцы', img: 'svezhie-ogurtsy.png', type: 'CHILD'}]
+						.choice__extra-block.other-users__item.item.swiper-slide(data-topping=val.name, data-type=val.type) 
 							.other-users__column.item__column 
 								.other-users__image.item__image 
 									img(src="images/choice/extra/" + val.img, alt="alt")
