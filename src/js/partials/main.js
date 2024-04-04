@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	AOS.init();
 
-	var users__swiper = new Swiper(".js-other-users-slider", {
+	var usersSwiperParam = {
 		navigation: {
 			prevEl: ".other-users .swiper-arrow-prev",
 			nextEl: ".other-users .swiper-arrow-next",
@@ -13,7 +13,13 @@ $(document).ready(function() {
 				slidesPerView: 3
 			}
 		}
-	});
+	};
+
+	if ($(window).width() < 800) {
+		usersSwiperParam.loop = true;
+	}
+
+	var users__swiper = new Swiper(".js-other-users-slider", usersSwiperParam);
 
 	$('.js-toppings-items').each(function () {
 		let slider = $(this).find('.swiper');
@@ -24,6 +30,7 @@ $(document).ready(function() {
 			let choice__extra = new Swiper(slider[0], {
 				slidesPerView: 1,
 				spaceBetween: 65,
+				loop: true,
 				navigation: {
 					nextEl: nextArrow[0],
 					prevEl: prevArrow[0],
@@ -50,6 +57,7 @@ $(document).ready(function() {
 						nextEl: ".swiper-recipe .swiper-arrow-next",
 					},
 					slidesPerView: 1,
+					loop: true,
 			});
 			var choice__items = new Swiper('.swiper-style', {
 					navigation: {
@@ -57,6 +65,7 @@ $(document).ready(function() {
 						nextEl: ".swiper-style .swiper-arrow-next",
 					},
 					slidesPerView: 1,
+					loop: true,
 			});
 			/*
 			var choice__items = new Swiper('.swiper-extra', {
@@ -101,8 +110,10 @@ $(document).ready(function() {
 		$(".js-choice-block-3").addClass( 'show' );
 
 		let authorValue = $('.js-author-items [data-author].active').data('author');
-		if(authorValue)
+		if(authorValue){
+			$('[data-type]').not('[data-type=' + authorValue + ']').remove();
 			$('[data-type=' + authorValue + ']').addClass( 'show' );
+		}
 	});
 
 	$('.js-toppings-items [data-topping]').click(function(){
@@ -116,6 +127,11 @@ $(document).ready(function() {
 		var _timer = null;
 	  
 		function _showText() {
+			if (i >= text_arr.length) {
+				clearInterval(_timer);
+				return;
+			}
+
 			$( ".preloader span" ).text(text_arr[i++]);
 		}
 	  
