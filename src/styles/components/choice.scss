@@ -77,10 +77,6 @@
          url("../images/paper.png") 30% 100% / 452px 300px no-repeat,
          url("../images/salad.png") 107% 75% / 351px 426px no-repeat;
 
-      & .swiper-arrow {
-         display: block;
-      }
-
       &-block {
          display: none;
 
@@ -160,6 +156,7 @@
 .choice__get-result-button {
    text-align: center;
    margin-top: 90px;
+   margin-bottom:50px;
 
    & .button-disabled {
       background: darkgrey;

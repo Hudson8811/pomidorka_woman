@@ -1,0 +1,21 @@
+.copyright {
+    border-top: 1px solid #FF002B;
+    padding: 85px 30px;
+    text-align: center;
+
+    p {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+
+        &:first-child {
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 800px){
+            font-size: 3.5vw;
+            line-height: 4.5vw;
+        }
+    }
+}

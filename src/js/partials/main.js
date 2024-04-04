@@ -132,7 +132,7 @@ $(document).ready(function() {
 				return;
 			}
 
-			$( ".preloader span" ).text(text_arr[i++]);
+			$( ".preloader span.text" ).text(text_arr[i++]);
 		}
 	  
 		_timer = setInterval(_showText, 2000);

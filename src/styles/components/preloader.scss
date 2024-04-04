@@ -7,11 +7,11 @@
    z-index: 999;
    display: none;
 
-   background: url("../images/towel.png") -38% 145% / 700px 600px no-repeat,
-         url("../images/tomatoes.png") 125% -70% / 674px 450px no-repeat,
+   background: url("../images/towel.png") -20% 120% / 700px 600px no-repeat,
+         url("../images/tomatoes.png") 110% -10% / 674px 450px no-repeat,
          url("../images/leaf-small.png") 10% 0% / 145px 215px no-repeat,
-         url("../images/leaf-big.png") 0% 25% / 186px 274px no-repeat,
-         url("../images/salad.png") 105% 130% / 351px 426px no-repeat;
+         url("../images/leaf-big.png") 0% 10% / 186px 274px no-repeat,
+         url("../images/salad.png") 100% 110% / 351px 426px no-repeat;
    background-color: #ffffff;
 
    &.show {
@@ -22,8 +22,14 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+
+      h2 {
+         margin-top: 40px;
+         margin-bottom: 10%;
+      }
+
       img {
          width: auto;
          height: auto;
@@ -31,7 +37,7 @@
 			max-height: 100%;
       }
 
-      span {
+      .text {
          margin-top: 60px;
          color: #118400;
          font-family: Cocogoose Narrow;
