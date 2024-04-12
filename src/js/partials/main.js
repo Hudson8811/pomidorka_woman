@@ -21,29 +21,6 @@ $(document).ready(function() {
 
 	var users__swiper = new Swiper(".js-other-users-slider", usersSwiperParam);
 
-	$('.js-toppings-items').each(function () {
-		let slider = $(this).find('.swiper');
-		if (slider.length > 0){
-			let prevArrow = $(this).find('.swiper-arrow-prev');
-			let nextArrow = $(this).find('.swiper-arrow-next');
-
-			let choice__extra = new Swiper(slider[0], {
-				slidesPerView: 1,
-				spaceBetween: 65,
-				loop: true,
-				navigation: {
-					nextEl: nextArrow[0],
-					prevEl: prevArrow[0],
-				},
-				breakpoints: {
-					801: {
-						slidesPerView: 3
-					}
-				}
-			});
-		}
-	})
-
 
 	function toggleSwiper() {
 		if ($(window).width() > 800) {
@@ -114,6 +91,29 @@ $(document).ready(function() {
 			$('[data-type]').not('[data-type=' + authorValue + ']').remove();
 			$('[data-type=' + authorValue + ']').addClass( 'show' );
 		}
+
+		$('.js-toppings-items').each(function () {
+			let slider = $(this).find('.swiper');
+			if (slider.length > 0){
+				let prevArrow = $(this).find('.swiper-arrow-prev');
+				let nextArrow = $(this).find('.swiper-arrow-next');
+
+				let choice__extra = new Swiper(slider[0], {
+					slidesPerView: 1,
+					spaceBetween: 65,
+					loop: true,
+					navigation: {
+						nextEl: nextArrow[0],
+						prevEl: prevArrow[0],
+					},
+					breakpoints: {
+						801: {
+							slidesPerView: 3
+						}
+					}
+				});
+			}
+		})
 	});
 
 	$('.js-toppings-items [data-topping]').click(function(){
